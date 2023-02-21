@@ -1,0 +1,29 @@
+QUESTION : Print 1 to n without using loops.
+
+ANSWER : #include<stdio.h>
+
+void printTilln(int n)
+{
+    if (n==0) {
+        return ;
+    }
+    printTilln(n-1);
+    printf("%d ", n);
+    
+}
+
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while (t--)
+    {
+        int n;
+        scanf("%d",&n);
+        printTilln(n);
+        printf("\n");
+        
+
+    }
+    return 0;
+}
