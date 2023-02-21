@@ -1,0 +1,33 @@
+QUESTION : Given a number "n". Find the sum of all the digits of N.
+
+ANSWER : #include<stdio.h>
+
+          int NumberReverse(int n);
+          int main()
+          
+          {
+          int n, sum;
+          
+             printf("Enter the number");
+             scanf("%d", &n);
+             sum = NumberReverse(n);
+             printf("Sum of Digits : %d\n", sum);
+             return 0;
+             
+             }
+             int NumberReverse(int n)
+             { 
+                 if (n==0)
+                 
+             
+                 {return 0;}
+                 
+             
+             else {return n%10 + NumberReverse(n/10);}
+             
+             }
+             
+        
+             
+             
+
